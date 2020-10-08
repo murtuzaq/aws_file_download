@@ -6,16 +6,16 @@ def main():
     ###################################
     # create a list of all json files in specified folder
     path_to_json = 'json_files/'
-    json_files = []
+    list_json_files = []
     for file in os.listdir(path_to_json):
         if (file.endswith(".json")):
-            json_files.append(path_to_json + file)
+            list_json_files.append(path_to_json + file)
     ###################################
 
-    asset_list_images = []
-    asset_list_icons = []
+    list_images = []
+    list_icons = []
 
-    for file in json_files:
+    for file in list_json_files:
         ###################################
         #print json file found to be parsed
         print(file)
@@ -33,14 +33,14 @@ def main():
 
                     if (obj  == "icon") :
                         #create a list of icons
-                        asset_list_icons.append(data_nodes_obj[obj])
+                        list_icons.append(data_nodes_obj[obj])
                         #####################################
                         #print each icon identified in the json file to the  screen
                         #print(data_nodes_obj[obj])
                         #####################################
                     elif (obj == "image"):
                         # create a list of icons
-                        asset_list_images.append(data_nodes_obj[obj])
+                        list_images.append(data_nodes_obj[obj])
                         #####################################
                         #print each icon identified in the json file to the  screen
                         #print(data_nodes_obj[obj])
@@ -49,19 +49,19 @@ def main():
 
 
     #convert list to set to remove duplicate asset and then convert back to list;
-    asset_sets_icons = set(asset_list_icons)
-    asset_list_icons = list(asset_sets_icons)
+    set_icons = set(list_icons)
+    list_icons = list(set_icons)
 
-    asset_sets_images = set(asset_list_images)
-    asset_list_images = list(asset_sets_images)
+    sets_images = set(list_images)
+    list_images = list(sets_images)
 
     #####################################
     # print number of icons and images collected in the list
-    print("number of icons:", len(asset_list_icons) )
-    print(asset_list_icons)
+    print("number of icons:", len(list_icons) )
+    print(list_icons)
 
-    print("number of images:", len(asset_list_images) )
-    print(asset_list_images)
+    print("number of images:", len(list_images) )
+    print(list_images)
     ####################################
 
 if __name__ == '__main__':
