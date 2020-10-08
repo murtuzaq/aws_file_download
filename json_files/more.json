@@ -1,0 +1,215 @@
+{
+  "version": "2.0",
+  "root": "more_category",
+  "nodes": {
+    "more_category": {
+      "children": [
+        "more_ferment",
+        "more_keepwarm",
+        "more_sanitize",
+        "more_settings"
+      ]
+    },
+    "more_ferment": {
+      "name": "Ferment",
+      "children": [
+        "more_ferment_config"
+      ]
+    },
+    "more_keepwarm": {
+      "name": "Keep Warm",
+      "children": [
+        "more_keepwarm_config"
+      ]
+    },
+    "more_sanitize": {
+      "name": "Sanitize",
+      "children": [
+        "more_sanitize_config"
+      ]
+    },
+    "more_settings": {
+      "name": "Settings",
+      "children": [
+        "more_setting_wifi",
+        "more_setting_weight",
+        "more_setting_sound",
+        "more_setting_brightness",
+        "more_setting_time",
+        "more_setting_general"
+      ]
+    },
+    "more_setting_wifi": {
+      "name": "Wifi Connection",
+      "children": [
+        "more_setting_wifi_config"
+      ]
+    },
+    "more_setting_weight": {
+      "name": "Weight Units",
+      "children": [
+        "more_setting_weight_config"
+      ]
+    },
+    "more_setting_sound": {
+      "name": "Sound",
+      "children": [
+        "more_setting_sound_config"
+      ]
+    },
+    "more_setting_brightness": {
+      "name": "Brightness",
+      "children": [
+        "more_setting_brightness_config"
+      ]
+    },
+    "more_setting_time": {
+      "name": "Time",
+      "children": [
+        "more_setting_time_config"
+      ]
+    },
+    "more_setting_general": {
+      "name": "General",
+      "children": [
+        "more_setting_general_about",
+        "more_setting_general_update",
+        "more_setting_general_wifi",
+        "more_setting_general_factory"
+      ]
+    },
+    "more_setting_general_about": {
+      "name": "About",
+      "children": [
+        "more_setting_general_about_config"
+      ]
+    },
+    "more_setting_general_update": {
+      "name": "Firmware Update",
+      "children": [
+        "more_setting_general_update_config"
+      ]
+    },
+    "more_setting_general_wifi": {
+      "name": "Wifi Reset",
+      "children": [
+        "more_setting_general_wifi_config"
+      ]
+    },
+    "more_setting_general_factory": {
+      "name": "Factory Reset",
+      "children": [
+        "more_setting_general_factory_config"
+      ]
+    },
+
+    "more_ferment_config": {
+      "data": {
+        "result": {
+          "cntrl_id": 3,
+          "lbl": "",
+          "ico": "ico_Ferment_01.png",
+          "name": "Ferment",
+          "cooking_method": 16,
+          "cooking_time": 28800
+        }
+      }
+    },
+    "more_keepwarm_config": {
+      "data": {
+        "result": {
+          "cntrl_id": 3,
+          "lbl": "",
+          "ico": "ico_KeepWarm_02.png",
+          "name": "Keep Warm",
+          "cooking_method": 15,
+          "cooking_time": 1800
+        }
+      }
+    },
+    "more_sanitize_config": {
+      "data": {
+        "result": {
+          "cntrl_id": 3,
+          "ico": "ico_Sterilize_02.png",
+          "name": "Sanitize",
+          "cooking_method": 17,
+          "cooking_time": 600,
+          "pres_level": 1,
+          "pres_release": 0
+        }
+      }
+    },
+    "more_setting_wifi_config": {
+      "data": {
+        "result": {
+          "cntrl_id": 15
+        }
+      }
+    },
+    "more_setting_weight_config": {
+      "data": {
+        "result": {
+          "cntrl_id": 16
+        }
+      }
+    },
+    "more_setting_brightness_config": {
+      "data": {
+        "result": {
+          "cntrl_id": 17
+        }
+      }
+    },
+    "more_setting_time_config": {
+      "data": {
+        "result": {
+          "cntrl_id": 28
+        }
+      }
+    },
+    "more_setting_sound_config": {
+      "data": {
+        "result": {
+          "cntrl_id": 24
+        }
+      }
+    },
+    
+    "more_setting_general_scalecal_config": {
+      "cntrl_id": 19
+    },
+
+    "more_setting_general_update_config": {
+     "data": {
+        "result": {
+          "cntrl_id": 22
+        }
+      }
+    },
+    
+    "more_setting_general_about_config": {
+      "data": {
+        "result": {
+          "cntrl_id": 20
+        }
+      }
+    },
+    "more_setting_general_wifi_config": {
+      "data": {
+        "result": {
+          "cntrl_id": 18,
+          "reset": 0
+        }
+      }
+    },
+    "more_setting_general_factory_config": {
+      "data": {
+        "result": {
+          "cntrl_id": 18,
+          "reset": 1
+        }
+      }
+    }
+  }
+}
